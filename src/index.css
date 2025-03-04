@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-family{
+  font-family: "Cormorant Garamond", serif;
+}
+body{
+  margin: 0;
+}
+/* Add this for Cormorant Garamond */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+
+
+.hero {
+  background-image: linear-gradient(to right, rgba(13, 10, 26, 2),rgba(13, 10, 26, 1),  rgba(13, 10, 26, 0.6)), url("/mak-header.jpg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  position: relative;
+}
