@@ -1,11 +1,11 @@
-import Header from '../components/Header';
 import Works from '../components/Works';
 import AboutSection from '../components/AboutSection';
+import HeroSection from '../components/HeroSection';
 
 const Home = () => {
   return (
     <div>
-      <Header />
+      <HeroSection />
       <AboutSection />
       <Works/>
     </div>
