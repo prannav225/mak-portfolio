@@ -1,12 +1,12 @@
 import Header from '../components/Header';
-import About from '../components/About';
 import Works from '../components/Works';
+import AboutSection from '../components/AboutSection';
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <About />
+      <AboutSection />
       <Works/>
     </div>
   )

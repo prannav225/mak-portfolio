@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaYoutube } from "react-icons/fa6";
 
-const About = () => {
+const AboutSection = () => {
     return (
         <section className="px-52">
             <div className="flex flex-col">
@@ -100,4 +100,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default AboutSection;
