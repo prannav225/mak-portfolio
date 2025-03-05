@@ -12,28 +12,28 @@ const HeroSection = () => {
             <header className="py-10 px-20 border-b-[0.5px] border-gray-400/25">
                 <nav className="flex justify-between items-center px-40">
                     <h1 className="text-xl font-semibold text-white cursor-pointer"><Link to="/">MANSOOR ALI KHAN </Link></h1>
-                    <ul className="flex space-x-8 uppercase text-white font-medium">
-                        <li><Link to="/" className="hover:text-[--color-gold] transition duration-300 text-grey-400">Home</Link></li>
-                        <li><Link to="/about" className="hover:text-[--color-gold] transition duration-300 text-grey-400">About</Link></li>
-                        <li><Link to="/blog" className="hover:text-[--color-gold] transition duration-300 text-grey-400">Blog</Link></li>
-                        <li><Link to="/gallery" className="hover:text-[--color-gold] transition duration-300 text-grey-400">Gallery</Link></li>
-                        <li><Link to="/contact" className="hover:text-[--color-gold] transition duration-300 text-grey-400">Contact</Link></li>
+                    <ul className="flex space-x-8 capitalize text-white font-medium">
+                        <li><Link to="/" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Home</Link></li>
+                        <li><Link to="/about" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">About</Link></li>
+                        <li><Link to="/blog" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Blog</Link></li>
+                        <li><Link to="/gallery" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Gallery</Link></li>
+                        <li><Link to="/contact" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Contact</Link></li>
                     </ul>
                     <div className="flex space-x-5 social-media">
                         <a href="https://x.com/MansoorKhanINC" target="_blank" rel="noopener noreferrer">
-                            <FaXTwitter className='text-white hover:text-white transition duration-300 text-gray-400/60 cursor-pointer' size={18} />
+                            <FaXTwitter className='text-gray-400 hover:text-white transition duration-300 text-gray-400/60 cursor-pointer' size={18} />
                         </a>
                         <a href="https://www.facebook.com/MansoorAliKhanINC" target="_blank" rel="noopener noreferrer">
-                            <FaFacebook className='text-white hover:text-white transition duration-300 text-gray-400/60 cursor-pointer' size={18} />
+                            <FaFacebook className='text-gray-400 hover:text-white transition duration-300 text-gray-400/60 cursor-pointer' size={18} />
                         </a>
                         <a href="https://www.instagram.com/mansoor1314" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram className='text-white hover:text-white transition duration-300 text-gray-400/60 cursor-pointer' size={18} />
+                            <FaInstagram className='text-gray-400 hover:text-white transition duration-300 text-gray-400/60 cursor-pointer' size={18} />
                         </a>
                         <a href="https://www.linkedin.com/in/mansoor-khan-75458430/" target="_blank" rel="noopener noreferrer">
-                            <IoLogoLinkedin className='text-white hover:text-white transition duration-300 text-gray-400/60 cursor-pointer' size={18} />
+                            <IoLogoLinkedin className='text-gray-400 hover:text-white transition duration-300 text-gray-400/60 cursor-pointer' size={18} />
                         </a>
                         <a href="https://www.youtube.com/@MansoorKhanINC" target="_blank" rel="noopener noreferrer">
-                            <FaYoutube className='text-white hover:text-white transition duration-300 text-gray-400/60 cursor-pointer' size={18} />
+                            <FaYoutube className='text-gray-400 hover:text-white transition duration-300 text-gray-400/60 cursor-pointer' size={18} />
                         </a>
                     </div>
                 </nav>

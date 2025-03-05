@@ -4,12 +4,12 @@ const Contact = () => {
     return (
         <div>
             <Header />
-            <div className='bg-gradient-to-r from-[--color-darker] to-[--color-dark] text-white py-20 px-52'>
+            <div className='bg-gradient-to-r from-[--color-darker] to-[--color-dark] text-white py-20 px-60'>
                 <h1 className='font-family font-semibold text-6xl'>Contact</h1>
             </div>
 
-            <div className='py-20 px-52'>
-                <div className='grid grid-cols-2 gap-12'>
+            <div className='py-20 px-60'>
+                <div className='grid grid-cols-2 gap-16'>
                     {/* Contact Form */}
                     <div>
                         <form className='space-y-6'>
@@ -50,7 +50,7 @@ const Contact = () => {
                     </div>
 
                     {/* Map */}
-                    <div className='h-[500px]'>
+                    <div className='h-[700px] w-[450px] absolute top-56 right-52'>
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_URL"
                             width="100%" 
@@ -59,7 +59,7 @@ const Contact = () => {
                             allowFullScreen 
                             loading="lazy" 
                             referrerPolicy="no-referrer-when-downgrade"
-                            className='rounded-md'
+                            className='rounded-lg shadow-2xl'
                         />
                     </div>
                 </div>

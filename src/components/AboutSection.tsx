@@ -63,7 +63,7 @@ const AboutSection = () => {
                             READ THE FULL STORY →
                         </a>
 
-                        <div className="mt-12">
+                        <div className="mt-10">
                             <h1 className="font-semibold text-xl">Connect with me on social media</h1>
                             <div className="flex gap-4 py-3">
                                 <div className="bg-gray-200 hover:bg-gray-300 transition duration-300 p-5 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">

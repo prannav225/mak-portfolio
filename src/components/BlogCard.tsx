@@ -8,7 +8,7 @@ interface BlogCardProps {
 
 const BlogCard = ({ date, title, excerpt, imageUrl, slug }: BlogCardProps) => {
     return (
-        <div className="flex mb-16 justify-center items-center py-10 gap-9">
+        <div className="flex mb-16 justify-center items-center py-10 gap-16">
             <div className="">
                 <img 
                     src={imageUrl} 

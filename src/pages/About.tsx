@@ -4,10 +4,10 @@ const About = () => {
     return (
         <div>
             <Header />
-            <div className="px-52 py-20 bg-gradient-to-r from-[--color-darker] to-[--color-dark]">
-                <div className="flex">
+            <div className="px-60 py-20 bg-gradient-to-r from-[--color-darker] to-[--color-dark]">
+                <div className="flex gap-16">
                     {/* Left Column - Image */}
-                    <div className="w-1/2">
+                    <div className="">
                         <img
                             src="https://placehold.co/400x550"
                             alt="Mansoor Ali Khan"
@@ -16,7 +16,7 @@ const About = () => {
                     </div>
 
                     {/* Right Column - Content */}
-                    <div className="w-1/2 text-white">
+                    <div className="w-2/3 text-white">
                         <h3 className="uppercase tracking-wide font-semibold">
                             ABOUT
                         </h3>
@@ -48,7 +48,7 @@ const About = () => {
             </div>
 
             {/* Early Life Section */}
-            <div className="px-52 py-12 bg-white">
+            <div className="px-60 pt-12 pb-24 bg-white">
                 <div className="max-w-6xl">
                     <h2 className="text-6xl font-semibold font-family mb-1">EARLY LIFE</h2>
 
@@ -72,7 +72,7 @@ const About = () => {
                     {/* Image Section */}
                     <div className="mt-12 flex justify-center">
                         <img
-                            src="https://placehold.co/800x400"
+                            src="https://placehold.co/600x350"
                             alt="Early Life"
                             className="rounded-tl-[60px] rounded-br-[60px] rounded-md object-cover shadow-lg"
                         />
@@ -81,7 +81,7 @@ const About = () => {
             </div>
 
             {/* Professional Life Section */}
-            <div className="px-52 py-12 bg-gray-100">
+            <div className="px-60 pt-12 pb-24 bg-gray-100">
                 <div className="max-w-6xl">
                     <h2 className="text-6xl font-semibold font-family mb-12">PROFESSIONAL LIFE</h2>
 
@@ -105,7 +105,7 @@ const About = () => {
                     {/* Image Section */}
                     <div className="mt-12 flex justify-center">
                         <img
-                            src="https://placehold.co/800x400"
+                            src="https://placehold.co/600x350"
                             alt="Professional Life"
                             className="rounded-tl-[60px] rounded-br-[60px] object-cover shadow-lg"
                         />
@@ -114,7 +114,7 @@ const About = () => {
             </div>
 
             {/* Personal Life Section */}
-            <div className="px-52 py-12 bg-white">
+            <div className="px-60 pt-12 pb-24 bg-white">
                 <div className="max-w-6xl">
                     <h2 className="text-6xl font-semibold font-family mb-12">PERSONAL LIFE</h2>
 
@@ -138,7 +138,7 @@ const About = () => {
                     {/* Image Section */}
                     <div className="mt-12 flex justify-center">
                         <img
-                            src="https://placehold.co/800x400"
+                            src="https://placehold.co/600x350"
                             alt="Personal Life"
                             className="rounded-tl-[60px] rounded-br-[60px] rounded-md object-cover shadow-lg"
                         />
@@ -147,7 +147,7 @@ const About = () => {
             </div>
 
             {/* Philanthropy Section */}
-            <div className="px-52 pt-12 pb-24 bg-gray-100">
+            <div className="px-60 pt-12 pb-24 bg-gray-100">
                 <div className="max-w-6xl">
                     <h2 className="text-6xl font-semibold font-family mb-12">PHILANTHROPY</h2>
 
