@@ -35,11 +35,11 @@ const About = () => {
                         </div>
 
                         {/* Bottom Image */}
-                        <div className="size-2/3">
+                        <div className="flex justify-end">
                             <img
                                 src="/mak-about2.jpg"
                                 alt="Mansoor Ali Khan with supporters"
-                                className="w-[85%] h-auto rounded-bl-[60px] shadow-lg object-cover"
+                                className="w-[60%] h-auto rounded-bl-[60px] shadow-lg object-cover"
                             />
                         </div>
                     </div>
@@ -66,29 +66,29 @@ const About = () => {
                         <div className="mt-12">
                             <h1 className="font-semibold text-xl">Connect with me on social media</h1>
                             <div className="flex gap-4 py-3">
-                                <div className="bg-gray-100 hover:bg-gray-300 transition duration-300 p-5 rounded-tr-xl hover:rounded-tr-2xl rounded-bl-xl hover:rounded-bl-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
+                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300 p-5 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
                                     <a href="https://x.com/MansoorKhanINC" target="_blank" rel="noopener noreferrer" className="">
-                                        <FaXTwitter size={18}/>
+                                        <FaXTwitter size={20}/>
                                     </a>
                                 </div>
-                                <div className="bg-gray-100 hover:bg-gray-300 transition duration-300 p-5 rounded-tr-xl hover:rounded-tr-2xl rounded-bl-xl hover:rounded-bl-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
+                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300 p-5 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
                                     <a href="https://www.facebook.com/MansoorAliKhanINC" target="_blank" rel="noopener noreferrer">
-                                        <FaFacebook size={18}/>
+                                        <FaFacebook size={20}/>
                                     </a>
                                 </div>
-                                <div className="bg-gray-100 hover:bg-gray-300 transition duration-300 p-5 rounded-tr-xl hover:rounded-tr-2xl rounded-bl-xl hover:rounded-bl-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
+                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300 p-5 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
                                     <a href="https://www.instagram.com/mansoor1314" target="_blank" rel="noopener noreferrer">
-                                        <FaInstagram size={18}/>
+                                        <FaInstagram size={20}/>
                                     </a>
                                 </div>
-                                <div className="bg-gray-100 hover:bg-gray-300 transition duration-300 p-5 rounded-tr-xl hover:rounded-tr-2xl rounded-bl-xl hover:rounded-bl-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
+                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300 p-5 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
                                     <a href="https://www.linkedin.com/in/mansoor-khan-75458430/" target="_blank" rel="noopener noreferrer">
-                                        <IoLogoLinkedin size={18}/>
+                                        <IoLogoLinkedin size={20}/>
                                     </a>
                                 </div>
-                                <div className="bg-gray-100 hover:bg-gray-300 transition duration-300 p-5 rounded-tr-xl hover:rounded-tr-2xl rounded-bl-xl hover:rounded-bl-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
+                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300 p-5 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
                                     <a href="https://www.youtube.com/@MansoorKhanINC" target="_blank" rel="noopener noreferrer">
-                                        <FaYoutube size={18}/>
+                                        <FaYoutube size={20}/>
                                     </a>
                                 </div>
                             </div>
