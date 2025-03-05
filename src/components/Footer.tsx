@@ -1,15 +1,18 @@
 import { FaXTwitter, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
 import { IoLogoLinkedin, IoMail } from "react-icons/io5";
 import { MdLocationOn } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-[--color-darker] text-white mt-20">
+        <footer className="bg-gradient-to-r from-[--color-darker] to-[--color-dark] text-white">
             <div className="container mx-auto px-52 py-16">
                 <div className="grid grid-cols-3 gap-20">
                     {/* Column 1 - Brand */}
                     <div className="flex flex-col justify-self-start">
-                        <h2 className="text-2xl font-semibold mb-6">MANSOOR ALI KHAN</h2>
+                        <h2 className="text-2xl font-semibold mb-6">
+                            <Link to="/">MANSOOR ALI KHAN</Link>
+                        </h2>
                         <div className="mb-6">
                             <h3 className="mb-6 text-lg">Connect With Me:</h3>
                             <div className="grid grid-cols-3 grid-rows-2 gap-4 w-fit">
@@ -47,11 +50,11 @@ const Footer = () => {
                     <div className="flex flex-col justify-self-center">
                         <h2 className="text-base font-semibold mb-6">NAVIGATION</h2>
                         <ul className="space-y-3 font-light text-gray-400">
-                            <li><a href="#" className="hover:text-[--color-gold] transition-colors">Home</a></li>
-                            <li><a href="#" className="hover:text-[--color-gold] transition-colors">About</a></li>
-                            <li><a href="#" className="hover:text-[--color-gold] transition-colors">Blog</a></li>
-                            <li><a href="#" className="hover:text-[--color-gold] transition-colors">Gallery</a></li>
-                            <li><a href="#" className="hover:text-[--color-gold] transition-colors">Contact</a></li>
+                            <li><a href="/" className="hover:text-[--color-gold] transition-colors">Home</a></li>
+                            <li><a href="/about" className="hover:text-[--color-gold] transition-colors">About</a></li>
+                            <li><a href="/blog" className="hover:text-[--color-gold] transition-colors">Blog</a></li>
+                            <li><a href="/gallery" className="hover:text-[--color-gold] transition-colors">Gallery</a></li>
+                            <li><a href="/contact" className="hover:text-[--color-gold] transition-colors">Contact</a></li>
                         </ul>
                     </div>
 
@@ -60,11 +63,11 @@ const Footer = () => {
                         <h2 className="text-base font-semibold mb-6">CONTACT US</h2>
                         <div className="space-y-3 font-light text-gray-400">
                             <div className="flex my-auto gap-x-2">
-                                <MdLocationOn size={22} className="text-gray-400"/>
+                                <MdLocationOn size={22} className="text-gray-400" />
                                 <p>Lumbung Hidup East Java</p>
                             </div>
                             <div className="flex my-auto gap-x-2">
-                                <IoMail size={22} className="text-gray-400"/>
+                                <IoMail size={22} className="text-gray-400" />
                                 <p>Hello@Homco.com</p>
                             </div>
                         </div>
