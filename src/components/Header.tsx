@@ -64,9 +64,9 @@ const Header = () => {
 
                     {/* Mobile Menu */}
                     <div className={`
-                        fixed top-0 left-0 w-full h-screen
+                        fixed top-0 left-0 w-full h-screen pt-24
                         bg-[--color-darker]
-                        flex flex-col justify-center items-center
+                        flex flex-col justify-start items-center
                         transition-transform duration-300 ease-in-out z-10
                         ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}
                     `}>

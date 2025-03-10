@@ -64,7 +64,7 @@ const HeroSection = () => {
                 </nav>
                 
                 {/* Mobile Navigation */}
-                <nav className="flex md:hidden justify-between items-center">
+                <nav className="flex md:hidden justify-between">
                     <h1 className="text-xl font-semibold text-white cursor-pointer z-20">
                         <Link to="/">MANSOOR ALI KHAN</Link>
                     </h1>
@@ -80,9 +80,9 @@ const HeroSection = () => {
 
                     {/* Mobile Menu */}
                     <div className={`
-                        fixed top-0 left-0 w-full h-screen
+                        fixed top-0 left-0 pt-24 w-full h-screen
                         bg-[--color-darker]
-                        flex flex-col justify-center items-center
+                        flex flex-col justify-start items-center
                         transition-transform duration-300 ease-in-out z-10
                         ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}
                     `}>
@@ -118,7 +118,7 @@ const HeroSection = () => {
                     <h2 className="text-xl md:text-5xl font-semibold tracking-wide font-family">COMMITTED TO PROGRESS.<br />DEDICATED TO PEOPLE.</h2>
                     <p className="text-base md:text-lg pr-0 md:pr-5 opacity-90">Bridging politics, education, and social service, Mansoor Ali Khan has spent decades working to empower communities, shape policy, and drive meaningful change especially in Bengaluru Central and beyond.</p>
                     <p className='pt-8 md:pt-12'>
-                        <a href="#about" className="text-[--color-gold] hover:opacity-80 transition duration-300 underline underline-offset-4">LEARN MORE ABOUT MANSOOR →</a>
+                        <a href="/about" className="text-[--color-gold] hover:opacity-80 transition duration-300 underline underline-offset-4">LEARN MORE ABOUT MANSOOR →</a>
                     </p>
                 </div>
             </div>
