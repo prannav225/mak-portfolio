@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 .font-family{
   font-family: "Cormorant Garamond", serif;
@@ -24,10 +25,19 @@ body{
 
 
 .hero {
-  background-image: linear-gradient(to right, rgba(13, 10, 26, 2),rgba(13, 10, 26, 1),  rgba(13, 10, 26, 0.6)), url("/mak-header.jpg");
-  background-position: center right;
+  background-image: linear-gradient(to right, rgba(13, 10, 26, 0.95), rgba(13, 10, 26, 0.9), rgba(13, 10, 26, 0.6)), url("/mak-header.jpg");
+  background-size: cover;
+  background-position: left;
   background-repeat: no-repeat;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(13, 10, 26, 1), rgba(13, 10, 26, 2), rgba(13, 10, 26, 0.4)), url("/mak-header.jpg");
+    background-position: center right;
+    background-size: contain;
+  }
 }
 
 /* Custom Scrollbar Styles */
