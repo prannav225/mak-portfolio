@@ -6,8 +6,8 @@ const Works = () => {
         {/* Item 1 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 lg:gap-y-16 md:gap-x-10">
           <div className="relative shadow-2xl w-full">
-            <img src="https://placehold.co/500x400" alt="Public Service" className="w-full h-[300px] md:h-[400px] object-cover" />
-            <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-bl-3xl">
+            <img src="/mak-works2.jpg" alt="Public Service" className="w-full h-[300px] md:h-[400px] object-cover rounded-sm" />
+            <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-bl-3xl rounded-sm">
               <p className="text-white font-family text-base md:text-xl leading-relaxed">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               </p>
@@ -37,8 +37,8 @@ const Works = () => {
             </a>
           </div>
           <div className="relative shadow-2xl w-full order-1 md:order-2">
-            <img src="https://placehold.co/500x400" alt="Public Service" className="w-full h-[300px] md:h-[400px] object-cover" />
-            <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-br-3xl">
+            <img src="mak-works1.jpg" alt="Public Service" className="w-full h-[300px] md:h-[400px] object-cover rounded-sm" />
+            <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-br-3xl rounded-sm">
               <p className="text-white font-family text-base md:text-xl leading-relaxed">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               </p>
@@ -50,8 +50,8 @@ const Works = () => {
         {/* Item 3 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 lg:gap-y-16 md:gap-x-10">
           <div className="relative shadow-2xl w-full">
-            <img src="https://placehold.co/500x400" alt="Public Service" className="w-full h-[300px] md:h-[400px] object-cover" />
-            <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-bl-3xl">
+            <img src="mak-works3.jpg" alt="Public Service" className="w-full h-[300px] md:h-[400px] object-cover rounded-sm" />
+            <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-bl-3xl rounded-sm">
               <p className="text-white font-family text-base md:text-xl leading-relaxed">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               </p>
@@ -81,8 +81,8 @@ const Works = () => {
             </a>
           </div>
           <div className="relative shadow-2xl w-full order-1 md:order-2">
-            <img src="https://placehold.co/500x400" alt="Public Service" className="w-full h-[300px] md:h-[400px] object-cover" />
-            <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-br-3xl">
+            <img src="mak-works4.png" alt="Economic Growth & Employment Opportunities" className="w-full h-[300px] md:h-[400px] object-cover rounded-sm" />
+            <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-br-3xl rounded-sm">
               <p className="text-white font-family text-base md:text-xl leading-relaxed">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               </p>
