@@ -8,7 +8,7 @@ const Works = () => {
           <div className="relative shadow-2xl w-full">
             <img src="/mak-works2.jpg" alt="Public Service" className="w-full h-[300px] md:h-[400px] object-cover rounded-sm" />
             <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-bl-3xl rounded-sm">
-              <p className="text-white font-family text-base md:text-xl leading-relaxed">
+              <p className="text-white font-family text-lg leading-relaxed">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               </p>
               <p className="text-white/80 mt-2 md:mt-4 text-xs md:text-sm uppercase">— LOREM IPSUM, DOLOR SIT amet</p>
@@ -16,7 +16,7 @@ const Works = () => {
           </div>
           <div className="flex flex-col justify-center mt-16 md:mt-0">
             <h3 className="text-xl md:text-2xl font-semibold mb-4">Public Service & Political Leadership</h3>
-            <p className="text-gray-700 mb-4 text-base md:text-lg">
+            <p className="text-gray-700 mb-4 text-base md:text-md">
               Strategizing progressive governance, addressing key concerns in Karnataka with a specific focus on Bengaluru Central and beyond, and strengthening Congress' grassroots presence in every state that the Indian National Congress has assigned him to.
             </p>
             <a href="#" className="text-[--color-blue] hover:opacity-80 transition duration-300 font-medium flex items-center">
@@ -29,7 +29,7 @@ const Works = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 lg:gap-y-16 md:gap-x-10">
           <div className="flex flex-col justify-center order-2 md:order-1 mt-16 md:mt-0">
             <h3 className="text-xl md:text-2xl font-semibold mb-4">Education & Youth Empowerment</h3>
-            <p className="text-gray-700 mb-4 text-base md:text-lg">
+            <p className="text-gray-700 mb-4 text-base md:text-md">
               Championing education reform in Karnataka, supporting CBSE and independent schools, and providing scholarships for underprivileged students.
             </p>
             <a href="#" className="text-[--color-blue] hover:opacity-80 transition duration-300 font-medium flex items-center">
@@ -39,7 +39,7 @@ const Works = () => {
           <div className="relative shadow-2xl w-full order-1 md:order-2">
             <img src="mak-works1.jpg" alt="Public Service" className="w-full h-[300px] md:h-[400px] object-cover rounded-sm" />
             <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-br-3xl rounded-sm">
-              <p className="text-white font-family text-base md:text-xl leading-relaxed">
+              <p className="text-white font-family text-base md:text-lg leading-relaxed">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               </p>
               <p className="text-white/80 mt-2 md:mt-4 text-xs md:text-sm uppercase">— LOREM IPSUM, DOLOR SIT amet</p>
@@ -52,7 +52,7 @@ const Works = () => {
           <div className="relative shadow-2xl w-full">
             <img src="mak-works3.jpg" alt="Public Service" className="w-full h-[300px] md:h-[400px] object-cover rounded-sm" />
             <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-bl-3xl rounded-sm">
-              <p className="text-white font-family text-base md:text-xl leading-relaxed">
+              <p className="text-white font-family text-base md:text-lg leading-relaxed">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               </p>
               <p className="text-white/80 mt-2 md:mt-4 text-xs md:text-sm uppercase">— LOREM IPSUM, DOLOR SIT amet</p>
@@ -60,7 +60,7 @@ const Works = () => {
           </div>
           <div className="flex flex-col justify-center mt-16 md:mt-0">
             <h3 className="text-xl md:text-2xl font-semibold mb-4">Civic Development & Infrastructure</h3>
-            <p className="text-gray-700 mb-4 text-base md:text-lg">
+            <p className="text-gray-700 mb-4 text-base md:text-md">
             Pushing for better roads, traffic management, suburban rail, and public services in Bengaluru Central. Advocating for Outer Ring Road completion and a more efficient urban transit system.
             </p>
             <a href="#" className="text-[--color-blue] hover:opacity-80 transition duration-300 font-medium flex items-center">
@@ -73,7 +73,7 @@ const Works = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 lg:gap-y-16 md:gap-x-10">
           <div className="flex flex-col justify-center order-2 md:order-1 mt-16 md:mt-0">
             <h3 className="text-xl md:text-2xl font-semibold mb-4">Economic Growth & Employment Opportunities</h3>
-            <p className="text-gray-700 mb-4 text-base md:text-lg">
+            <p className="text-gray-700 mb-4 text-base md:text-md">
             Promoting job creation and startup support in Bengaluru’s growing tech and business hubs while ensuring economic policies favor young professionals and small businesses.
             </p>
             <a href="#" className="text-[--color-blue] hover:opacity-80 transition duration-300 font-medium flex items-center">
@@ -83,7 +83,7 @@ const Works = () => {
           <div className="relative shadow-2xl w-full order-1 md:order-2">
             <img src="mak-works4.png" alt="Economic Growth & Employment Opportunities" className="w-full h-[300px] md:h-[400px] object-cover rounded-sm" />
             <div className="absolute -bottom-10 left-0 right-0 bg-[--color-blue] p-4 md:p-8 rounded-br-3xl rounded-sm">
-              <p className="text-white font-family text-base md:text-xl leading-relaxed">
+              <p className="text-white font-family text-base md:text-lg leading-relaxed">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               </p>
               <p className="text-white/80 mt-2 md:mt-4 text-xs md:text-sm uppercase">— LOREM IPSUM, DOLOR SIT amet</p>

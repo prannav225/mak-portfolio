@@ -65,12 +65,16 @@ const Footer = () => {
                         <div className="font-light text-sm text-gray-400 mb-3">
                             <div className="flex my-auto gap-x-2">
                                 <MdLocationOn size={18} className="text-gray-400" />
-                                <p>Lumbung Hidup East Java</p>
+                                <a href="https://maps.app.goo.gl/FZ88TN9WJTrHuwoY7" className="hover:underline underline-offset-4">
+                                Al-Ameen Apartments, Pattalamma Temple Rd,
+                                <br />
+                                Basavanagudi, Bengaluru, Karnataka 560004
+                                </a>
                             </div>
                         </div>
                         <div className="flex gap-x-2 font-light text-sm text-gray-400">
                             <IoMail size={18} className="text-gray-400" />
-                            <p>Hello@Homco.com</p>
+                            <p>connect@mansoorkhan.in</p>
                         </div>
                     </div>
                 </div>

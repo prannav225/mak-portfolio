@@ -18,7 +18,7 @@ const AboutSection = () => {
                     </div>
                     {/* Introduction Text */}
                     <div className="px-0 md:px-4">
-                        <h2 className="text-xl md:text-3xl lg:text-4xl font-family mb-0 md:mb-6 font-semibold">
+                        <h2 className="text-xl md:text-2xl lg:text-3xl font-family mb-0 md:mb-6 font-semibold">
                             Mansoor Ali Khan is a seasoned political leader, educationist, and entrepreneur who brings nearly three decades of expertise in running schools and holding leadership positions in the education sector.
                         </h2>
                     </div>
@@ -27,12 +27,12 @@ const AboutSection = () => {
                 {/* Main Content Grid */}
                 <div className="flex flex-col md:flex-row gap-8 md:gap-x-16">
                     {/* Left Column - Main Image */}
-                    <div className='w-full md:w-[45%]'>
+                    <div className='w-full md:w-[35%]'>
                         <div className="mb-8">
                             <img
                                 src="/mak-about.jpg"
                                 alt="Mansoor Ali Khan"
-                                className="w-full h-auto rounded-tl-[60px] shadow-lg object-cover"
+                                className="w-full h-auto rounded-tl-[60px] shadow-2xl object-cover"
                             />
                         </div>
 
@@ -47,16 +47,16 @@ const AboutSection = () => {
                     </div>
 
                     {/* Right Column - Text Content */}
-                    <div className="w-full md:w-[55%] flex flex-col gap-6 md:gap-8">
-                        <p className="text-base md:text-lg leading-relaxed">
+                    <div className="w-full md:w-[55%] flex flex-col gap-6 md:gap-8 ">
+                        <p className="">
                             As the 2024 MP candidate for Bangalore Central Lok Sabha constituency representing the Indian National Congress, he has consistently demonstrated a commitment to addressing urban challenges and fostering sustainable growth.
-                        </p>
+                        </p >
 
-                        <p className="text-base md:text-lg leading-relaxed">
+                        <p className="">
                             His extensive career spans key roles in public service and strategic governance. Serving as AICC Secretary for Kerala & Lakshadweep, Mansoor has significantly influenced policy-making and development strategies across Karnataka, Telangana, and beyond. His robust background in education, exemplified by leadership roles in renowned institutions such as Delhi Public Schools and the School of India—reflects his ability to blend academic excellence with corporate-friendly governance.
-                        </p>
+                        </p >
 
-                        <p className="text-base md:text-lg leading-relaxed">
+                        <p className="">
                             Mansoor Ali Khan's forward-thinking vision bridges politics and business. He has not only elevated academic standards and empowered youth but also championed initiatives in urban infrastructure, economic development, and community engagement. His approach is characterized by pragmatic solutions and innovative strategies that cater to diverse stakeholder needs, making him a respected leader in both the public and corporate spheres.
                         </p>
 

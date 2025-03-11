@@ -21,7 +21,7 @@ const About = () => {
                             ABOUT
                         </h3>
                         <h2 className="text-3xl md:text-5xl font-family mb-4 md:mb-6 font-semibold tracking-wider text-center md:text-left">MANSOOR ALI KHAN</h2>
-                        <p className="text-base md:text-lg mb-8 md:mb-12 font-light text-center md:text-left">
+                        <p className="text-base md:text-md mb-8 md:mb-12 font-light text-center md:text-left">
                             Bridging politics, education, and social service,{' '}
                             <span className="text-white font-semibold">Mansoor Ali Khan</span> has spent decades working to
                             empower communities, shape policy, and drive meaningful change especially in{' '}
@@ -30,16 +30,16 @@ const About = () => {
 
                         {/* Navigation Links */}
                         <div className="space-y-3 md:space-y-4 flex flex-col items-center md:items-start">
-                            <a href="#early-life" className="block text-[--color-gold] hover:opacity-80 transition duration-300">
+                            <a href="#early-life" className="block text-[--color-gold] hover:opacity-80 transition duration-300 text-sm">
                                 → EARLY LIFE
                             </a>
-                            <a href="#professional-life" className="block text-[--color-gold] hover:opacity-80 transition duration-300">
+                            <a href="#professional-life" className="block text-[--color-gold] hover:opacity-80 transition duration-300 text-sm">
                                 → PROFESSIONAL LIFE
                             </a>
-                            <a href="#personal-life" className="block text-[--color-gold] hover:opacity-80 transition duration-300">
+                            <a href="#personal-life" className="block text-[--color-gold] hover:opacity-80 transition duration-300 text-sm">
                                 → PERSONAL LIFE
                             </a>
-                            <a href="#philanthropy" className="block text-[--color-gold] hover:opacity-80 transition duration-300">
+                            <a href="#philanthropy" className="block text-[--color-gold] hover:opacity-80 transition duration-300 text-sm">
                                 → PHILANTHROPY
                             </a>
                         </div>
@@ -50,16 +50,16 @@ const About = () => {
             {/* Early Life Section */}
             <div id="early-life" className="px-4 sm:px-8 md:px-16 lg:px-40 xl:px-60 pt-8 md:pt-12 pb-12 md:pb-24 bg-white">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-family mb-1 text-center md:text-left">EARLY LIFE</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-semibold font-family mb-4 md:mb-6 text-center md:text-left">EARLY LIFE</h2>
 
                     <div className="mb-6 font-semibold">
-                        <h3 className="text-xl md:text-2xl font-family text-center md:text-left">Education & Youth Empowerment</h3>
-                        <p className="text-lg md:text-xl font-family font-semibold text-center md:text-left">
+                        <h3 className="text-xl font-family text-center md:text-left">Education & Youth Empowerment</h3>
+                        <p className="text-lg font-family font-semibold text-center md:text-left">
                             Championing Education Reform In Karnataka, Supporting CBSE And Independent Schools, And Providing Scholarships For Underprivileged Students.
                         </p>
                     </div>
 
-                    <div className="space-y-4 md:space-y-6 text-base md:text-lg font-normal">
+                    <div className="space-y-4 md:space-y-6 text-base md:text-md font-normal">
                         <p>
                             As the 2024 MP candidate for Bangalore Central Lok Sabha constituency representing the Indian National Congress, he has consistently demonstrated a commitment to addressing urban challenges and fostering sustainable growth.
                         </p>
@@ -83,16 +83,16 @@ const About = () => {
             {/* Professional Life Section */}
             <div id="professional-life" className="px-4 sm:px-8 md:px-16 lg:px-40 xl:px-60 pt-8 md:pt-12 pb-12 md:pb-24 bg-gray-100">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-family mb-6 md:mb-12 text-center md:text-left">PROFESSIONAL LIFE</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-semibold font-family mb-4 md:mb-6 text-center md:text-left">PROFESSIONAL LIFE</h2>
 
                     <div className="mb-6 font-semibold">
-                        <h3 className="text-xl md:text-2xl font-family text-center md:text-left">Education & Youth Empowerment</h3>
-                        <p className="text-lg md:text-xl font-family font-semibold text-center md:text-left">
+                        <h3 className="text-xl font-family text-center md:text-left">Education & Youth Empowerment</h3>
+                        <p className="text-lg font-family font-semibold text-center md:text-left">
                             Championing Education Reform In Karnataka, Supporting CBSE And Independent Schools, And Providing Scholarships For Underprivileged Students.
                         </p>
                     </div>
 
-                    <div className="space-y-4 md:space-y-6 text-base md:text-lg font-normal">
+                    <div className="space-y-4 md:space-y-6 text-base md:text-md font-normal">
                         <p>
                             As the 2024 MP candidate for Bangalore Central Lok Sabha constituency representing the Indian National Congress, he has consistently demonstrated a commitment to addressing urban challenges and fostering sustainable growth.
                         </p>
@@ -116,16 +116,16 @@ const About = () => {
             {/* Personal Life Section */}
             <div id="personal-life" className="px-4 sm:px-8 md:px-16 lg:px-40 xl:px-60 pt-8 md:pt-12 pb-12 md:pb-24 bg-white">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-family mb-6 md:mb-12 text-center md:text-left">PERSONAL LIFE</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-semibold font-family mb-4 md:mb-6 text-center md:text-left">PERSONAL LIFE</h2>
 
                     <div className="mb-6 font-semibold">
-                        <h3 className="text-xl md:text-2xl font-family text-center md:text-left">Education & Youth Empowerment</h3>
-                        <p className="text-lg md:text-xl font-family font-semibold text-center md:text-left">
+                        <h3 className="text-xl font-family text-center md:text-left">Education & Youth Empowerment</h3>
+                        <p className="text-lg font-family font-semibold text-center md:text-left">
                             Championing Education Reform In Karnataka, Supporting CBSE And Independent Schools, And Providing Scholarships For Underprivileged Students.
                         </p>
                     </div>
 
-                    <div className="space-y-4 md:space-y-6 text-base md:text-lg font-normal">
+                    <div className="space-y-4 md:space-y-6 text-base md:text-md font-normal">
                         <p>
                             As the 2024 MP candidate for Bangalore Central Lok Sabha constituency representing the Indian National Congress, he has consistently demonstrated a commitment to addressing urban challenges and fostering sustainable growth.
                         </p>
@@ -149,16 +149,16 @@ const About = () => {
             {/* Philanthropy Section */}
             <div id="philanthropy" className="px-4 sm:px-8 md:px-16 lg:px-40 xl:px-60 pt-8 md:pt-12 pb-12 md:pb-24 bg-gray-100">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-family mb-6 md:mb-12 text-center md:text-left">PHILANTHROPY</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-semibold font-family mb-4 md:mb-6 text-center md:text-left">PHILANTHROPY</h2>
 
                     <div className="mb-6 font-semibold">
-                        <h3 className="text-xl md:text-2xl font-family text-center md:text-left">Education & Youth Empowerment</h3>
-                        <p className="text-lg md:text-xl font-family font-semibold text-center md:text-left">
+                        <h3 className="text-xl font-family text-center md:text-left">Education & Youth Empowerment</h3>
+                        <p className="text-lg font-family font-semibold text-center md:text-left">
                             Championing Education Reform In Karnataka, Supporting CBSE And Independent Schools, And Providing Scholarships For Underprivileged Students.
                         </p>
                     </div>
 
-                    <div className="space-y-4 md:space-y-6 text-base md:text-lg font-normal">
+                    <div className="space-y-4 md:space-y-6 text-base md:text-md font-normal">
                         <p>
                             As the 2024 MP candidate for Bangalore Central Lok Sabha constituency representing the Indian National Congress, he has consistently demonstrated a commitment to addressing urban challenges and fostering sustainable growth.
                         </p>
