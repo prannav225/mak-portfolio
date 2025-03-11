@@ -15,19 +15,19 @@ const Gallery = () => {
           <p className='border border-[--color-blue] cursor-pointer hover:bg-[--color-blue] hover:text-white transition duration-300 p-2 rounded-md'>With Political Leaders</p>
           <p className='border border-[--color-blue] cursor-pointer hover:bg-[--color-blue] hover:text-white transition duration-300 p-2 rounded-br-2xl rounded-tr-2xl rounded-md'>Others</p>
         </div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 py-6 md:py-10'>
-          <img src="https://placehold.co/400x400" alt="" className='rounded-tl-[40px] md:rounded-tl-[60px] rounded-md w-full h-auto' />
-          <img src="https://placehold.co/400x400" alt="" className='rounded-md w-full h-auto' />
-          <img src="https://placehold.co/400x400" alt="" className='rounded-md rounded-tr-[40px] md:rounded-tr-[60px] w-full h-auto' />
-          <img src="https://placehold.co/400x400" alt="" className='rounded-md w-full h-auto' />
-          <img src="https://placehold.co/400x400" alt="" className='rounded-md w-full h-auto' />
-          <img src="https://placehold.co/400x400" alt="" className='rounded-md w-full h-auto' />
-          <img src="https://placehold.co/400x400" alt="" className='rounded-md w-full h-auto' />
-          <img src="https://placehold.co/400x400" alt="" className='rounded-md w-full h-auto' />
-          <img src="https://placehold.co/400x400" alt="" className='rounded-md w-full h-auto' />
-          <img src="https://placehold.co/400x400" alt="" className='rounded-md rounded-bl-[40px] md:rounded-bl-[60px] w-full h-auto' />
-          <img src="https://placehold.co/400x400" alt="" className='rounded-md w-full h-auto' />
-          <img src="https://placehold.co/400x400" alt="" className='rounded-md rounded-br-[40px] md:rounded-br-[60px] w-full h-auto' />
+        <div className='grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8 py-6 md:py-10'>
+          <img src="https://placehold.co/400x400" alt="" className='rounded-tl-[40px] md:rounded-tl-[60px] rounded-md shadow-md hover:shadow-2xl transition delay-100 w-full h-full object-cover aspect-square' />
+          <img src="https://placehold.co/400x400" alt="" className='rounded-md shadow-md hover:shadow-2xl transition delay-100 w-full h-full object-cover aspect-square' />
+          <img src="https://placehold.co/400x400" alt="" className='rounded-md shadow-md hover:shadow-2xl transition delay-100 rounded-tr-[40px] md:rounded-tr-[60px] w-full h-full object-cover aspect-square' />
+          <img src="https://placehold.co/400x400" alt="" className='rounded-md shadow-md hover:shadow-2xl transition delay-100 w-full h-full object-cover aspect-square' />
+          <img src="https://placehold.co/400x400" alt="" className='rounded-md shadow-md hover:shadow-2xl transition delay-100 w-full h-full object-cover aspect-square' />
+          <img src="https://placehold.co/400x400" alt="" className='rounded-md shadow-md hover:shadow-2xl transition delay-100 w-full h-full object-cover aspect-square' />
+          <img src="https://placehold.co/400x400" alt="" className='rounded-md shadow-md hover:shadow-2xl transition delay-100 w-full h-full object-cover aspect-square' />
+          <img src="https://placehold.co/400x400" alt="" className='rounded-md shadow-md hover:shadow-2xl transition delay-100 w-full h-full object-cover aspect-square' />
+          <img src="https://placehold.co/400x400" alt="" className='rounded-md shadow-md hover:shadow-2xl transition delay-100 w-full h-full object-cover aspect-square' />
+          <img src="https://placehold.co/400x400" alt="" className='rounded-md shadow-md hover:shadow-2xl transition delay-100 rounded-bl-[40px] md:rounded-bl-[60px] w-full h-full object-cover aspect-square' />
+          <img src="https://placehold.co/400x400" alt="" className='rounded-md shadow-md hover:shadow-2xl transition delay-100 w-full h-full object-cover aspect-square' />
+          <img src="https://placehold.co/400x400" alt="" className='rounded-md shadow-md hover:shadow-2xl transition delay-100 rounded-br-[40px] md:rounded-br-[60px] w-full h-full object-cover aspect-square' />
         </div>
       </div>
     </div>
