@@ -1,15 +1,37 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaXTwitter, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import '../styles/colors.css';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    // Prevent body scroll when menu is open
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+        
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isMenuOpen]);
+
+    // Function to check if link is active
+    const isActive = (path: string) => {
+        if (path === '/' && location.pathname === '/') {
+            return true;
+        }
+        return path !== '/' && location.pathname.startsWith(path);
     };
 
     return (
@@ -21,11 +43,11 @@ const Header = () => {
                     </h1>
                     
                     <ul className="flex space-x-8 capitalize text-white font-medium">
-                        <li><Link to="/" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Home</Link></li>
-                        <li><Link to="/about" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">About</Link></li>
-                        <li><Link to="/blog" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Blog</Link></li>
-                        <li><Link to="/gallery" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Gallery</Link></li>
-                        <li><Link to="/contact" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Contact</Link></li>
+                        <li><Link to="/" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/') ? 'underline' : ''}`}>Home</Link></li>
+                        <li><Link to="/about" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/about') ? 'underline' : ''}`}>About</Link></li>
+                        <li><Link to="/blog" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/blog') ? 'underline' : ''}`}>Blog</Link></li>
+                        <li><Link to="/gallery" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/gallery') ? 'underline' : ''}`}>Gallery</Link></li>
+                        <li><Link to="/contact" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/contact') ? 'underline' : ''}`}>Contact</Link></li>
                     </ul>
                     
                     <div className="flex space-x-5 social-media">
@@ -71,11 +93,11 @@ const Header = () => {
                         ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}
                     `}>
                         <ul className="flex flex-col space-y-6 capitalize text-white font-medium items-center mb-8">
-                            <li><Link to="/" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Home</Link></li>
-                            <li><Link to="/about" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">About</Link></li>
-                            <li><Link to="/blog" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Blog</Link></li>
-                            <li><Link to="/gallery" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Gallery</Link></li>
-                            <li><Link to="/contact" className="hover:underline underline-offset-8 transition duration-300 text-grey-400">Contact</Link></li>
+                            <li><Link to="/" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/') ? 'underline' : ''}`}>Home</Link></li>
+                            <li><Link to="/about" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/about') ? 'underline' : ''}`}>About</Link></li>
+                            <li><Link to="/blog" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/blog') ? 'underline' : ''}`}>Blog</Link></li>
+                            <li><Link to="/gallery" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/gallery') ? 'underline' : ''}`}>Gallery</Link></li>
+                            <li><Link to="/contact" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/contact') ? 'underline' : ''}`}>Contact</Link></li>
                         </ul>
                         <div className="flex space-x-5 social-media">
                             <a href="https://x.com/MansoorKhanINC" target="_blank" rel="noopener noreferrer">
