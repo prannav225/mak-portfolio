@@ -11,14 +11,14 @@ const AboutSection = () => {
                 <div className='flex flex-col md:flex-row py-16 md:py-32'>
                     {/* Header Section */}
                     <div className="flex-1 basis-1/2 mt-3 mb-6 md:mb-0">
-                        <h3 className="text-[--color-blue] uppercase tracking-wide font-semibold">
+                        <p className="text-[--color-blue] uppercase tracking-wide font-semibold text-sm">
                             <span className="text-[--color-blue] font-semibold">— </span>
                             ABOUT
-                        </h3>
+                        </p>
                     </div>
                     {/* Introduction Text */}
                     <div className="px-0 md:px-4">
-                        <h2 className="text-xl md:text-2xl lg:text-3xl font-family mb-0 md:mb-6 font-semibold">
+                        <h2 className="text-xl md:text-2xl lg:text-2xl font-family mb-0 md:mb-6 font-semibold">
                             Mansoor Ali Khan is a seasoned political leader, educationist, and entrepreneur who brings nearly three decades of expertise in running schools and holding leadership positions in the education sector.
                         </h2>
                     </div>
@@ -32,7 +32,7 @@ const AboutSection = () => {
                             <img
                                 src="/mak-about.jpg"
                                 alt="Mansoor Ali Khan"
-                                className="w-full h-auto rounded-tl-[60px] shadow-2xl object-cover"
+                                className="w-full h-auto rounded-tl-[60px] shadow-2xl object-cover rounded-sm"
                             />
                         </div>
 
@@ -41,13 +41,13 @@ const AboutSection = () => {
                             <img
                                 src="/mak-about2.jpg"
                                 alt="Mansoor Ali Khan with supporters"
-                                className="w-full md:w-[60%] h-auto rounded-bl-[60px] shadow-lg object-cover"
+                                className="w-full md:w-[60%] h-auto rounded-bl-[60px] shadow-lg object-cover rounded-sm"
                             />
                         </div>
                     </div>
 
                     {/* Right Column - Text Content */}
-                    <div className="w-full md:w-[55%] flex flex-col gap-6 md:gap-8 ">
+                    <div className="w-full md:w-[55%] flex flex-col gap-6 md:gap-8 text-base">
                         <p className="">
                             As the 2024 MP candidate for Bangalore Central Lok Sabha constituency representing the Indian National Congress, he has consistently demonstrated a commitment to addressing urban challenges and fostering sustainable growth.
                         </p >
@@ -61,36 +61,36 @@ const AboutSection = () => {
                         </p>
 
                         {/* Read More Link */}
-                        <a href="/about" className="text-[--color-blue] hover:opacity-80 transition duration-300 flex items-center gap-2 mt-4 underline underline-offset-4 font-semibold">
+                        <a href="/about" className="text-[--color-blue] hover:opacity-80 transition duration-300 flex items-center gap-2 mt-4 underline underline-offset-4 font-semibold text-sm">
                             READ THE FULL STORY →
                         </a>
 
-                        <div className="mt-8 md:mt-10">
+                        <div className="mt-8 md:mt-14">
                             <h1 className="font-semibold text-lg md:text-xl">Connect with me on social media</h1>
                             <div className="flex flex-wrap gap-3 md:gap-4 py-3">
-                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300 p-4 md:p-5 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
+                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300  rounded-sm hover:shadow-xl p-4 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
                                     <a href="https://x.com/MansoorKhanINC" target="_blank" rel="noopener noreferrer">
                                         <FaXTwitter size={18} />
                                     </a>
                                 </div>
-                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300 p-5 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
+                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300  rounded-sm hover:shadow-xl p-4 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
                                     <a href="https://www.facebook.com/MansoorAliKhanINC" target="_blank" rel="noopener noreferrer">
-                                        <FaFacebook size={20}/>
+                                        <FaFacebook size={18}/>
                                     </a>
                                 </div>
-                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300 p-5 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
+                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300  rounded-sm hover:shadow-xl p-4 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
                                     <a href="https://www.instagram.com/mansoor1314" target="_blank" rel="noopener noreferrer">
-                                        <FaInstagram size={20}/>
+                                        <FaInstagram size={18}/>
                                     </a>
                                 </div>
-                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300 p-5 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
+                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300  rounded-sm hover:shadow-xl p-4 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
                                     <a href="https://www.linkedin.com/in/mansoor-khan-75458430/" target="_blank" rel="noopener noreferrer">
-                                        <IoLogoLinkedin size={20}/>
+                                        <IoLogoLinkedin size={18}/>
                                     </a>
                                 </div>
-                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300 p-5 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
+                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300  rounded-sm hover:shadow-xl p-4 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
                                     <a href="https://www.youtube.com/@MansoorKhanINC" target="_blank" rel="noopener noreferrer">
-                                        <FaYoutube size={20}/>
+                                        <FaYoutube size={18}/>
                                     </a>
                                 </div>
                             </div>

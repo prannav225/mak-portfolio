@@ -4,7 +4,7 @@ const Gallery = () => {
     <div>
       <Header />
       <div className='bg-gradient-to-r from-[--color-darker] to-[--color-dark] text-white py-10 md:py-20 px-4 sm:px-8 md:px-16 lg:px-40 xl:px-60'>
-        <h1 className='font-family font-semibold text-3xl md:text-5xl lg:text-6xl uppercase text-center md:text-left'>Gallery</h1>
+        <h1 className='font-family font-semibold text-3xl md:text-5xl lg:text-6xl text-center md:text-left'>Gallery</h1>
       </div>
 
       <div className='my-6 md:my-10 px-4 sm:px-8 md:px-16 lg:px-40 xl:px-60'>
