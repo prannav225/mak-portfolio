@@ -64,7 +64,7 @@ const Footer = () => {
                         <h2 className="text-sm font-semibold mb-4 md:mb-6 mt-2 text-center md:text-left">CONTACT US</h2>
                         <div className="font-light text-sm text-gray-400 mb-3">
                             <div className="flex my-auto gap-x-2">
-                                <MdLocationOn size={18} className="text-gray-400" />
+                                <MdLocationOn size={24} className="text-gray-400" />
                                 <a href="https://maps.app.goo.gl/FZ88TN9WJTrHuwoY7" className="hover:underline underline-offset-4">
                                 Al-Ameen Apartments, Pattalamma Temple Rd,
                                 <br />
