@@ -1,11 +1,11 @@
-import { useRef, useState, FormEvent } from 'react';
-import emailjs from '@emailjs/browser';
+// import { useRef, useState, } from 'react';
+// import emailjs from '@emailjs/browser';
 import Header from '../components/Header';
 
 const Contact = () => {
-    const form = useRef<HTMLFormElement>(null);
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState({ success: false, message: '' });
+    // const form = useRef<HTMLFormElement>(null);
+    // const [isSubmitting, setIsSubmitting] = useState(false);
+    // const [submitStatus, setSubmitStatus] = useState({ success: false, message: '' });
 
     // const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     //   e.preventDefault();
@@ -54,11 +54,11 @@ const Contact = () => {
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 relative'>
                     {/* Contact Form */}
                     <div>
-                        {submitStatus.message && (
+                        {/* {submitStatus.message && (
                             <div className={`p-4 mb-6 rounded-md ${submitStatus.success ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
                                 {submitStatus.message}
                             </div>
-                        )}
+                        )} */}
                         <form className='space-y-4 md:space-y-6 text-sm'>
                             <div>
                                 <label htmlFor="name" className='block mb-2'>Name</label>
@@ -95,10 +95,10 @@ const Contact = () => {
                             </div>
                             <button
                                 type="submit"
-                                disabled={isSubmitting}
-                                className={`bg-[--color-blue] text-white px-6 md:px-8 py-3 md:py-4 rounded-md hover:bg-[--color-dark] transition duration-300 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                // disabled={isSubmitting}
+                                className={`bg-[--color-blue] text-white px-6 md:px-8 py-3 md:py-4 rounded-md hover:bg-[--color-dark] transition duration-300`}
                             >
-                                {isSubmitting ? 'Sending...' : 'Send Message'}
+                                {'Send Message'}
                             </button>
                         </form>
                     </div>
