@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
@@ -6,99 +7,137 @@ import { FaYoutube } from "react-icons/fa6";
 
 const AboutSection = () => {
     return (
-        <section className="px-4 md:px-20 lg:px-52">
+        <motion.section
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="px-4 md:px-20 lg:px-60"
+        >
             <div className="flex flex-col">
                 <div className='flex flex-col md:flex-row py-16 md:py-32'>
                     {/* Header Section */}
-                    <div className="flex-1 basis-1/2 mt-3 mb-6 md:mb-0">
+                    <motion.div 
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                        className="flex-1 basis-1/2 mt-3 mb-6 md:mb-0"
+                    >
                         <p className="text-[--color-blue] uppercase tracking-wide font-semibold text-sm">
                             <span className="text-[--color-blue] font-semibold">— </span>
                             ABOUT
                         </p>
-                    </div>
+                    </motion.div>
                     {/* Introduction Text */}
-                    <div className="px-0 md:px-4">
+                    <motion.div 
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className="px-0 md:px-4"
+                    >
                         <h2 className="text-xl md:text-2xl lg:text-2xl font-family mb-0 md:mb-6 font-semibold">
                             Mansoor Ali Khan is a seasoned political leader, educationist, and entrepreneur who brings nearly three decades of expertise in running schools and holding leadership positions in the education sector.
                         </h2>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Main Content Grid */}
-                <div className="flex flex-col md:flex-row gap-8 md:gap-x-16">
-                    {/* Left Column - Main Image */}
-                    <div className='w-full md:w-[35%]'>
-                        <div className="mb-8">
-                            <img
-                                src="/mak-about.jpg"
-                                alt="Mansoor Ali Khan"
-                                className="w-full h-auto rounded-tl-[60px] shadow-2xl object-cover rounded-sm"
-                            />
-                        </div>
+                <section>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8 justify-center items-center"
+                    >
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            viewport={{ once: true }}
+                            className="w-full lg:w-3/4 justify-self-end"
+                        >
+                            <img src="/mak-about.jpg" alt="" className="w-full h-auto rounded-sm rounded-tl-[60px] shadow-xl" />
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.3 }}
+                            viewport={{ once: true }}
+                            className="w-full text-sm font-normal space-y-6"
+                        >
+                            <p>As the 2024 MP candidate for Bangalore Central Lok Sabha constituency representing the Indian National Congress, he has consistently demonstrated a commitment to addressing urban challenges and fostering sustainable growth.</p>
 
-                        {/* Bottom Image */}
-                        <div className="flex justify-end">
-                            <img
-                                src="/mak-about2.jpg"
-                                alt="Mansoor Ali Khan with supporters"
-                                className="w-full md:w-[60%] h-auto rounded-bl-[60px] shadow-lg object-cover rounded-sm"
-                            />
-                        </div>
-                    </div>
+                            <p>His extensive career spans key roles in public service and strategic governance. Serving as AICC Secretary for Kerala & Lakshadweep, Mansoor has significantly influenced policy-making and development strategies across Karnataka, Telangana, and beyond. His robust background in education, exemplified by leadership roles in renowned institutions such as Delhi Public Schools and the School of India—reflects his ability to blend academic excellence with corporate-friendly governance.</p>
 
-                    {/* Right Column - Text Content */}
-                    <div className="w-full md:w-[55%] flex flex-col gap-6 md:gap-8 text-base">
-                        <p className="">
-                            As the 2024 MP candidate for Bangalore Central Lok Sabha constituency representing the Indian National Congress, he has consistently demonstrated a commitment to addressing urban challenges and fostering sustainable growth.
-                        </p >
+                            <p>Mansoor Ali Khan's forward-thinking vision bridges politics and business. He has not only elevated academic standards and empowered youth but also championed initiatives in urban infrastructure, economic development, and community engagement.</p>
 
-                        <p className="">
-                            His extensive career spans key roles in public service and strategic governance. Serving as AICC Secretary for Kerala & Lakshadweep, Mansoor has significantly influenced policy-making and development strategies across Karnataka, Telangana, and beyond. His robust background in education, exemplified by leadership roles in renowned institutions such as Delhi Public Schools and the School of India—reflects his ability to blend academic excellence with corporate-friendly governance.
-                        </p >
+                            <a href="/about" className="text-[--color-blue] uppercase underline underline-offset-4 text-sm font-medium inline-block pt-2">Read Full Story →</a>
+                        </motion.div>
+                    </motion.div>
 
-                        <p className="">
-                            Mansoor Ali Khan's forward-thinking vision bridges politics and business. He has not only elevated academic standards and empowered youth but also championed initiatives in urban infrastructure, economic development, and community engagement. His approach is characterized by pragmatic solutions and innovative strategies that cater to diverse stakeholder needs, making him a respected leader in both the public and corporate spheres.
-                        </p>
-
-                        {/* Read More Link */}
-                        <a href="/about" className="text-[--color-blue] hover:opacity-80 transition duration-300 flex items-center gap-2 mt-4 underline underline-offset-4 font-semibold text-sm">
-                            READ THE FULL STORY →
-                        </a>
-
-                        <div className="mt-8 md:mt-14">
-                            <h1 className="font-semibold text-lg md:text-xl">Connect with me on social media</h1>
+                    {/* Social Media Section */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8 justify-center items-center mt-8"
+                    >
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            viewport={{ once: true }}
+                            className="w-full lg:w-3/5 justify-self-end"
+                        >
+                            <img src="/mak-about2.jpg" alt="" className="w-full h-auto rounded-sm rounded-bl-[60px] shadow-xl" />
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.3 }}
+                            viewport={{ once: true }}
+                            className="text-sm font-medium"
+                        >
+                            <motion.p
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4, delay: 0.4 }}
+                                viewport={{ once: true }}
+                                className="mb-1 text-base"
+                            >
+                                Connect with me on Social Media:
+                            </motion.p>
                             <div className="flex flex-wrap gap-3 md:gap-4 py-3">
-                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300  rounded-sm hover:shadow-xl p-4 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
-                                    <a href="https://x.com/MansoorKhanINC" target="_blank" rel="noopener noreferrer">
-                                        <FaXTwitter size={18} />
-                                    </a>
-                                </div>
-                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300  rounded-sm hover:shadow-xl p-4 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
-                                    <a href="https://www.facebook.com/MansoorAliKhanINC" target="_blank" rel="noopener noreferrer">
-                                        <FaFacebook size={18}/>
-                                    </a>
-                                </div>
-                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300  rounded-sm hover:shadow-xl p-4 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
-                                    <a href="https://www.instagram.com/mansoor1314" target="_blank" rel="noopener noreferrer">
-                                        <FaInstagram size={18}/>
-                                    </a>
-                                </div>
-                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300  rounded-sm hover:shadow-xl p-4 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
-                                    <a href="https://www.linkedin.com/in/mansoor-khan-75458430/" target="_blank" rel="noopener noreferrer">
-                                        <IoLogoLinkedin size={18}/>
-                                    </a>
-                                </div>
-                                <div className="bg-gray-200 hover:bg-gray-300 transition duration-300  rounded-sm hover:shadow-xl p-4 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer">
-                                    <a href="https://www.youtube.com/@MansoorKhanINC" target="_blank" rel="noopener noreferrer">
-                                        <FaYoutube size={18}/>
-                                    </a>
-                                </div>
+                                {[
+                                    { Icon: FaXTwitter, link: "https://x.com/MansoorKhanINC" },
+                                    { Icon: FaFacebook, link: "https://www.facebook.com/MansoorAliKhanINC" },
+                                    { Icon: FaInstagram, link: "https://www.instagram.com/mansoor1314" },
+                                    { Icon: IoLogoLinkedin, link: "https://www.linkedin.com/in/mansoor-khan-75458430/" },
+                                    { Icon: FaYoutube, link: "https://www.youtube.com/@MansoorKhanINC" }
+                                ].map((social, index) => (
+                                    <motion.div
+                                        key={index}
+                                        initial={{ opacity: 0, scale: 0.8 }}
+                                        whileInView={{ opacity: 1, scale: 1 }}
+                                        transition={{ duration: 0.4, delay: 0.5 + (index * 0.1) }}
+                                        viewport={{ once: true }}
+                                        className="bg-gray-200 hover:bg-gray-300 transition duration-300 rounded-sm hover:shadow-xl p-4 rounded-tl-xl hover:rounded-tl-2xl rounded-br-xl hover:rounded-br-2xl text-zinc-700 hover:text-[--color-blue] cursor-pointer"
+                                    >
+                                        <a href={social.link} target="_blank" rel="noopener noreferrer">
+                                            <social.Icon size={18} />
+                                        </a>
+                                    </motion.div>
+                                ))}
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </motion.div>
+                    </motion.div>
+                </section>
             </div>
-        </section >
+        </motion.section>
     );
 };
 

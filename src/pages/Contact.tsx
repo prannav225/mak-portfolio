@@ -1,24 +1,73 @@
-import Header from '../components/Header'
+import { useRef, useState, FormEvent } from 'react';
+import emailjs from '@emailjs/browser';
+import Header from '../components/Header';
 
 const Contact = () => {
+    const form = useRef<HTMLFormElement>(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState({ success: false, message: '' });
+
+    // const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    //   e.preventDefault();
+    //   setIsSubmitting(true);
+    //   setSubmitStatus({ success: false, message: '' });
+  
+    //   if (form.current) {
+    //     emailjs
+    //       .sendForm('service_whbu41x', 'template_5xghiic', form.current, {
+    //         publicKey: 'FQum9PTHvXCdcSIHv',
+    //       })
+    //       .then(
+    //         (result) => {
+    //           console.log('SUCCESS!', result.text);
+    //           setSubmitStatus({ 
+    //             success: true, 
+    //             message: 'Your message has been sent successfully! We will get back to you soon.' 
+    //           });
+    //           // Reset form
+    //           form.current?.reset();
+    //         },
+    //         (error) => {
+    //           console.log('FAILED...', error.text);
+    //           setSubmitStatus({ 
+    //             success: false, 
+    //             message: 'Failed to send message. Please try again later or contact us directly.' 
+    //           });
+    //         },
+    //       )
+    //       .finally(() => {
+    //         setIsSubmitting(false);
+    //         // Scroll to the status message
+    //         window.scrollTo({ top: 0, behavior: 'smooth' });
+    //       });
+    //   }
+    // };
+
     return (
         <div>
             <Header />
             <div className='bg-gradient-to-r from-[--color-darker] to-[--color-dark] text-white py-10 md:py-20 px-4 sm:px-8 md:px-16 lg:px-40 xl:px-60'>
-                <h1 className='font-family font-semibold text-3xl md:text-5xl lg:text-6xl text-center md:text-left'>Contact</h1>
+                <h1 className='font-family font-semibold text-3xl md:text-4xl lg:text-5xl text-center md:text-left'>Contact</h1>
             </div>
 
             <div className='py-10 md:py-20 px-4 sm:px-8 md:px-16 lg:px-40 xl:px-60'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 relative'>
                     {/* Contact Form */}
                     <div>
-                        <form className='space-y-4 md:space-y-6'>
+                        {submitStatus.message && (
+                            <div className={`p-4 mb-6 rounded-md ${submitStatus.success ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                                {submitStatus.message}
+                            </div>
+                        )}
+                        <form className='space-y-4 md:space-y-6 text-sm'>
                             <div>
                                 <label htmlFor="name" className='block mb-2'>Name</label>
                                 <input
                                     type="text"
                                     id="name"
+                                    name="user_name"
                                     placeholder="Rachel Joe"
+                                    required
                                     className='w-full p-3 md:p-4 rounded-md outline-none border border-[--color-blue]'
                                 />
                             </div>
@@ -27,7 +76,9 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
+                                    name="user_email"
                                     placeholder="Rachel@domain.com"
+                                    required
                                     className='w-full p-3 md:p-4 rounded-md outline-none border border-[--color-blue]'
                                 />
                             </div>
@@ -36,15 +87,18 @@ const Contact = () => {
                                 <textarea
                                     id="message"
                                     rows={6}
+                                    name="message"
                                     placeholder="Type your message here..."
+                                    required
                                     className='w-full p-3 md:p-4 rounded-md outline-none border border-[--color-blue]'
                                 />
                             </div>
                             <button
                                 type="submit"
-                                className='bg-[--color-blue] text-white px-6 md:px-8 py-3 md:py-4 rounded-md hover:bg-[--color-dark] transition duration-300'
+                                disabled={isSubmitting}
+                                className={`bg-[--color-blue] text-white px-6 md:px-8 py-3 md:py-4 rounded-md hover:bg-[--color-dark] transition duration-300 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                             >
-                                Send Message
+                                {isSubmitting ? 'Sending...' : 'Send Message'}
                             </button>
                         </form>
                     </div>
@@ -67,4 +121,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Contact;

@@ -7,6 +7,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { FaYoutube } from "react-icons/fa6";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const HeroSection = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,14 +46,14 @@ const HeroSection = () => {
                     <div className="flex items-center gap-3">
                         <img src="/INC_Logo.png" alt="INC Logo" className="h-6 w-auto" />
                         <h1 className="text-md font-medium text-white cursor-pointer">
-                            <Link to="/">MANSOOR <span className='font-thin'>ALI KHAN</span></Link>
+                            <Link to="/">MANSOOR ALI KHAN</Link>
                         </h1>
                     </div>
 
                     <ul className="flex space-x-4 md:space-x-6 xl:space-x-8 capitalize text-white text-xs">
                         <li><Link to="/" className={`hover:underline-[0.5px] underline-offset-8 transition duration-300 text-grey-400 ${isActive('/') ? 'underline' : ''}`}>Home</Link></li>
                         <li><Link to="/about" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/about') ? 'underline' : ''}`}>About</Link></li>
-                        <li><Link to="/blog" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/blog') ? 'underline' : ''}`}>Blog</Link></li>
+                        <li><Link to="/news" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/blog') ? 'underline' : ''}`}>news</Link></li>
                         <li><Link to="/gallery" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/gallery') ? 'underline' : ''}`}>Gallery</Link></li>
                         <li><Link to="/contact" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/contact') ? 'underline' : ''}`}>Contact</Link></li>
                     </ul>
@@ -129,15 +130,41 @@ const HeroSection = () => {
                     </div>
                 </nav>
             </header>
-            <div className="hero-section flex items-center justify-left px-4 md:px-20 lg:pl-60 text-white py-20 md:py-48 bg-[-color-dark]">
+            <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="hero-section flex items-center justify-left px-4 md:px-20 lg:pl-60 text-white py-20 md:py-48 bg-[-color-dark]"
+            >
                 <div className="text-left max-w-3xl relative flex flex-col">
-                    <h2 className="text-xl md:text-6xl font-medium leading-relaxed font-family capitalize mb-8">Committed to Progress. Dedicated to People.</h2>
-                    <p className="text-sm pr-0 md:pr-28 mb-16 opacity-90">Bridging politics, education, and social service, Mansoor Ali Khan has spent decades working to empower communities, shape policy, and drive meaningful change especially in Bengaluru Central and beyond.</p>
-                    <p className=''>
-                        <a href="/about" className="text-[--color-gold] text-xs hover:opacity-80 transition duration-300 underline underline-offset-4">LEARN MORE ABOUT MANSOOR →</a>
-                    </p>
+                    <motion.h2 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className="text-3xl md:text-6xl font-medium tracking-normal leading-normal md:leading-[1.2] font-family capitalize mb-8"
+                    >
+                        Committed to Progress.<br />
+                        Dedicated to People.
+                    </motion.h2>
+                    <motion.p 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                        className="text-sm pr-0 md:pr-28 mb-16 opacity-90"
+                    >
+                        Bridging politics, education, and social service, Mansoor Ali Khan has spent decades working to empower communities, shape policy, and drive meaningful change especially in Bengaluru Central and beyond.
+                    </motion.p>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.6 }}
+                    >
+                        <a href="/about" className="text-[--color-gold] text-xs hover:opacity-80 transition duration-300 underline underline-offset-4">
+                            LEARN MORE ABOUT MANSOOR →
+                        </a>
+                    </motion.p>
                 </div>
-            </div>
+            </motion.div>
         </main>
     );
 };

@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import './styles/colors.css'; 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Blog from './pages/Blog';
+import News from './pages/News';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 
@@ -15,7 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/news" element={<News />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

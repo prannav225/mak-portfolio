@@ -42,14 +42,14 @@ const Header = () => {
                     <div className="flex items-center gap-3">
                         <img src="/INC_Logo.png" alt="INC Logo" className="h-6 w-auto" />
                         <h1 className="text-md font-medium text-white cursor-pointer">
-                            <Link to="/">MANSOOR <span className='font-thin'>ALI KHAN</span></Link>
+                            <Link to="/">MANSOOR ALI KHAN</Link>
                         </h1>
                     </div>
 
                     <ul className="flex space-x-4 md:space-x-6 xl:space-x-8 capitalize text-white text-xs">
                         <li><Link to="/" className={`hover:underline-[0.5px] underline-offset-8 transition duration-300 text-grey-400 ${isActive('/') ? 'underline' : ''}`}>Home</Link></li>
                         <li><Link to="/about" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/about') ? 'underline' : ''}`}>About</Link></li>
-                        <li><Link to="/blog" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/blog') ? 'underline' : ''}`}>Blog</Link></li>
+                        <li><Link to="/news" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/news') ? 'underline' : ''}`}>News</Link></li>
                         <li><Link to="/gallery" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/gallery') ? 'underline' : ''}`}>Gallery</Link></li>
                         <li><Link to="/contact" className={`hover:underline underline-offset-8 transition duration-300 text-grey-400 ${isActive('/contact') ? 'underline' : ''}`}>Contact</Link></li>
                     </ul>
