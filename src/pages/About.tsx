@@ -272,7 +272,7 @@ const About = () => {
                             Advocated for vital urban infrastructure improvements, including transportation, civic services, and economic development, addressing key concerns of the Bangalore Central constituency.
                         </li>
                         <li>
-                            <span className="font-semibold pr-2">MSocial Welfare:</span>
+                            <span className="font-semibold pr-2">Social Welfare:</span>
                             Supported healthcare initiatives, provided emergency services, and contributed to COVID-19 relief through direct community engagement.
                         </li>
                     </motion.div>
